@@ -8,8 +8,8 @@ Set counter to 0
     Go To  ${HOME_URL}
     Click Button  Nollaa
 
-When counter has a nonzero value and it is reset the value becomes zero
+Set counter to 10
     Go To  ${HOME_URL}
-    Click Button  Nollaa
-    Page Should Contain  nappia painettu 0 kertaa
-
+    Input Text  value  10
+    Click Button  Aseta
+    Page Should Contain  nappia painettu 10 kertaa

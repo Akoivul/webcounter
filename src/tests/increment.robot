@@ -4,6 +4,10 @@ Suite Setup  Open And Configure Browser
 Suite Teardown  Close Browser
 
 *** Test Cases ***
+Set counter to 0
+    Go To  ${HOME_URL}
+    Click Button  Nollaa
+
 At start the counter is zero
     Go To  ${HOME_URL}
     Title Should Be  Laskuri
